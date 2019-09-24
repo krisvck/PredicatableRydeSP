@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\workspace\\nodejs\\node.exe',
+1 verbose cli   'C:\\workspace\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle predictableride_app@0.0.1~prestart: predictableride_app@0.0.1
+6 silly lifecycle predictableride_app@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle predictableride_app@0.0.1~start: predictableride_app@0.0.1
+8 verbose lifecycle predictableride_app@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle predictableride_app@0.0.1~start: PATH: C:\workspace\nodejs\node_modules\npm\bin\node-gyp-bin;C:\_pr_repo\demos\nodejs_webserver-k12-route-planner-poc\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Git\cmd;OpenSSL_HOME\bin;C:\Program Files\Amazon\AWSCLI\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\cURL\bin;C:\workspace\nodejs\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\workspace\tools\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\;C:\Program Files\ffmpeg\bin;C:\Program Files (x86)\VideoLAN\VLC\plugins;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;;C:\Program Files (x86)\AOMEI Backupper;C:\Users\Matt\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Matt\AppData\Local\Programs\Python\Python35-32\;C:\Users\Matt\AppData\Local\Microsoft\WindowsApps;C:\Users\Matt\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;
+10 verbose lifecycle predictableride_app@0.0.1~start: CWD: C:\_pr_repo\demos\nodejs_webserver-k12-route-planner-poc
+11 silly lifecycle predictableride_app@0.0.1~start: Args: [ '/d /s /c', 'node server.js' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at process.kill (internal/process.js:172:13)
+12 verbose stack     at process.listener (C:\workspace\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\workspace\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\workspace\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+13 verbose cwd C:\_pr_repo\demos\nodejs_webserver-k12-route-planner-poc
+14 error Windows_NT 10.0.17134
+15 error argv "C:\\workspace\\nodejs\\node.exe" "C:\\workspace\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+16 error node v6.10.0
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
