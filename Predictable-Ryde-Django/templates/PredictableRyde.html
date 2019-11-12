@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictable Ryde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<h2>Predictable Ryde</h2>
+
+{% load crispy_forms_tags %}
+
+<form action="/results/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+      <div class="form-group col-md-3 mb-0">
+        {{form.numOfVehicles|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-3 mb-0">
+        {{form.docFile }}
+      </div>
+    </table>
+<input type="submit" class="btn btn-primary" value="Submit" />
+</form>
+</body>
+</html>
