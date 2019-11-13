@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<h2>Route Results:</h2>
+<form method="post">
+
+          <ul>
+            <li>Available Vehicles: <strong>{{ numOfVehicles }}</strong></li>
+            <li>CSV File: <strong>{{ docFile }}</strong></li>
+            <li>Results: <strong>{{ output }}</strong></li>
+          </ul>
+</form>
+<div id="includedContent"></div>
+{% include 'map.html' %}
+</body>
+</html>
