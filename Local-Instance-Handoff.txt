@@ -1,0 +1,72 @@
+Matthew Castrigno
+CS481 Fall 2019
+Senior Project - Predicable Ryde
+Project Handoff Supplement
+
+
+The initial starting point for this project was an example posted on the openroutesource.org website. The use case for the example is to route deleveries of medicne in a disaster scenario. The solution is constrained by the hours that deleveries can be accetpted and the capacity of the delevery vehicles. 
+https://openrouteservice.org/disaster-optimization/  This solution accesses the openrouteservice through an API and openrouteservice.org servers. 
+
+The team modified this example to route school buses and students albeit with a limited number of students. This was due to the limitations that the free license API imposes. Those limitations restricted the modifed example to only be able to route 50 students. That modifed example si provided with other handoff documents in this project and can be run in a Juyputer notebook. That example was further modifed to run as a website using the Django framework. Those details are provided in other project handoff documents.
+
+In an effort to extend the 50 student limitation, the team investigated runing a private instance of the openrouteservice library. The open source licensing of the openrouteservice permits this use.
+
+Detailed instructions on how to do this in a docker container can be found here:
+https://github.com/GIScience/openrouteservice/blob/master/docker/README.md
+
+Configuration of the local instance is done by modifying the app.config file. The details can be found here:
+https://github.com/GIScience/openrouteservice/wiki/Configuration-(app.config)
+
+While doing so was not attempted in this project, it is also possible to build the service from source. This requires proper configuration of the machine that the code would run on and is more complicated than running in a docker container.
+
+
+The docker method was implemented. The Juyputer/Python code was modifed to access this instance on the same machine. What was discovered is that the openrouteservice utilizes several open source services for methods. In the bus routing code, specifically the optimization method which utilizes the opensource project VROOM. The openrouteservice.org hosted version accesses this service however the image provided for the docker container does not incorportate this service. The openrouteservice.org community forum was used to inquire further about how to implement a local openrouteservice image that could work with a locally install instance of VROOM.
+
+This is the verbatim explaination provided:
+--------------------------------------------
+You send a HTTP POST request to a server running vroom-express (that’s the light-weight HTTP wrapper for vroom)
+
+Vroom-express receives the request, parses it and hands it down to vroom (really just an executable run on command line)
+
+Vroom is configurable to be able to HTTP request a matrix from a ORS server to solve the vehicle routing problem. The ORS installation is ideally local (with reference to vroom), or you’ll have to alter some code in vroom
+
+With the duration matrix from ORS, vroom solves the problem and returns the JSON to vroom-express, which in turn returns it to your client
+--------------------------------------------
+End of explaination from openrouteservice.
+
+Time did not permit attepting to install Vroom or Vroom-express.
+Installing a private instance is outlined by three major steps as listed on this page:
+https://github.com/VROOM-Project/vroom/wiki/Demo-server
+1) Install VROOM and OSRM v5.0.0 or later.
+2) Run vroom-express to expose VROOM's API over http requests.
+3) Serve vroom-frontend.
+
+Intalling Vroom requires compiling from C++ source and a compiler that support C++14.
+OSRM (Open Source Routing Machine) also can be compiled from source. The source does not appear to be platform indpendent, runing exculsively on Unix derivatives. However there are docker recipes availble. 
+https://github.com/Project-OSRM/osrm-backend/wiki/Docker-Recipes
+Vroom frontend provides an API via HTTP requests. It is a NodeJS code base and needs to be installed locally. https://github.com/VROOM-Project/vroom-frontend
+
+
+
+Other useful links:
+Documentation in pdf form of the phython version of the openroutesource library:
+https://buildmedia.readthedocs.org/media/pdf/openrouteservice-py/latest/openrouteservice-py.pdf
+
+Similar informaition as a web page:
+https://openrouteservice-py.readthedocs.io/en/latest/openrouteservice.html
+
+A quickstart guide:
+https://openrouteservice-py.readthedocs.io/en/latest/readme_link.html#
+
+Other examples using Juyputer/Python:
+https://github.com/GIScience/openrouteservice-examples/
+
+Openrouteservice community forum:
+https://ask.openrouteservice.org/
+
+
+
+
+
+
+
