@@ -24,17 +24,21 @@ numOfVehicles = int(sys.argv[1])
 dataFilePath = str(sys.argv[2])
 csvPath = "data/" + dataFilePath
 
+# School bus depot location for dropping off kids
+depotLat = float(sys.argv[3])
+depotLon = float(sys.argv[4])
+
 
 
 # Define how long (in seconds) each bus stops at each location
-numOfSecondsPerStop = 15
+numOfSecondsPerStop = int(sys.argv[5])
 
 
 # In[482]:
 
 
 # First define the map centered around Beira
-m = folium.Map(location=[43.640565, -116.339269], tiles='cartodbpositron', zoom_start=13)
+m = folium.Map(location=[depotLat, depotLon], tiles='cartodbpositron', zoom_start=13)
 
 # Next load the delivery locations from CSV file selected from data directory
 # ID, Lat, Lon, Open_From, Open_To, Needed_Amount
@@ -46,6 +50,7 @@ deliveries_data = pd.read_csv(
 
 # Number of locations to visit and pickup from
 # This is added to below for every location imported from the .csv file
+# This variable is purely for calculating if every location as been visited
 numOfPoints = 0
 
 # Plot the locations on the map with more info in the ToolTip
@@ -71,7 +76,8 @@ for location in deliveries_data.itertuples():
     ).add_to(m)
 
 # The vehicles are all located Centennial High School
-depot = [43.649839, -116.336241]
+#depot = [43.649839, -116.336241]
+depot = [depotLat, depotLon]
 
 folium.Marker(
     location=depot,
@@ -86,6 +92,7 @@ folium.Marker(
 
 # Divide up students per vehicle
 # Number of locations to visit / number of vehicles
+# This can be changed here manually
 maxStudentsPerVehicle = math.ceil(numOfPoints/numOfVehicles)
 
 
@@ -102,7 +109,7 @@ for idx in range(numOfVehicles):
             start=list(reversed(depot)),
             end=list(reversed(depot)),
             capacity=[maxStudentsPerVehicle],
-            time_window=[1553241600, 1553245200]  # Fri 8-20:00, expressed in POSIX timestamp
+            time_window=[1553241600, 1553245200]  # Expressed in POSIX timestamp, currently set to one hour
         )
     )
 
@@ -199,18 +206,17 @@ bus_routes = [[] for i in range(0, numOfVehicles)]
 
 # Iterate through each bus route
 # Extract driver instructions and write them to a text file for each route
+# Instruction text files are located in the 'directions' directory
 for i in range(numOfVehicles):
     for route in result['routes']:
-        #print('Vehicle: ' + str(route['vehicle']))
         for step in route['steps']:
             if(route['vehicle'] == i):
-                #print(step['location'])
                 vehicles[i].append(step['location'])
 
     request_params_bus = {'coordinates': vehicles[i],
                 'format_out': 'geojson',
-                'profile': 'driving-car',
-                'preference': 'shortest',
+                'profile': 'driving-hgv',
+                'preference': 'fastest',
                 'instructions': 'True',}
     bus_routes[i] = ors_client.directions(**request_params_bus)
 
@@ -261,6 +267,7 @@ m.save(outfile= "templates/map.html")
 
 print("There will be " + str(numOfVehicles) + " vehicles delivering " + str(numOfPoints) + " students with a max of " + str(maxStudentsPerVehicle) + " students per vehicle.")
 
+# Check to see if all kids were picked up or not, given the parameters set
 if numOfPoints != sum(vehicles_df.amount.sum()):
     print("Not all kids were picked up! \n")
     print('Number of locations:  %d' % numOfPoints)
