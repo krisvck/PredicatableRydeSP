@@ -1,4 +1,4 @@
-Matthew Castrigno
+﻿Matthew Castrigno
 CS481 Fall 2019
 Senior Project - Predicable Ryde
 Project Handoff Supplement
@@ -47,6 +47,28 @@ https://github.com/Project-OSRM/osrm-backend/wiki/Docker-Recipes
 Vroom frontend provides an API via HTTP requests. It is a NodeJS code base and needs to be installed locally. https://github.com/VROOM-Project/vroom-frontend
 
 
+The project can be run two different ways. One being the Django web application that will easily let you input parameters
+as well as view the created map on a web page. Secondly the python script can be run simply by itself.
+
+In order to run the Django web application, three things must be installed:
+1) Django
+2) Python
+3) Django crispy forms
+
+Once these are installed simply run 'python manage.py runserver' from within the Django application directory.
+Then go to 'localhost:8000/PredictableRyde' in a web browser to view the application.
+
+To run the python script by itself use the given parameters:
+python generateRoute.py <number of vehicles to use> <csv dataset> <school latitude> <school longitude> <number of seconds per stop>
+
+Here is an example:
+python generateRoute.py 3 demo_data.csv 43.649839 -116.336241 15
+
+When running either the Django app or the script, the csv data file must be located in the 'data' directory.
+A map.html with be created inside the 'templates' directory of the routes.
+All route instructions will be created inside the 'directions' directory.
+
+
 
 Other useful links:
 Documentation in pdf form of the phython version of the openroutesource library:
@@ -63,6 +85,16 @@ https://github.com/GIScience/openrouteservice-examples/
 
 Openrouteservice community forum:
 https://ask.openrouteservice.org/
+
+Python information and download:
+https://www.python.org/
+
+Django information and download:
+https://www.djangoproject.com/
+
+django-crispy-forms information:
+https://django-crispy-forms.readthedocs.io/en/latest/
+
 
 
 

@@ -1,0 +1,104 @@
+Head north
+Turn right
+Turn right
+Turn right
+Turn left
+Turn right onto East McMillan Road
+Turn right onto North Brookmeadow Drive
+Turn slight left onto North Brookmeadow Drive
+Turn right onto North Morninggale Way
+Turn left onto North Brook Mist Place
+Arrive at North Brook Mist Place, on the right
+Head west on North Brook Mist Place
+Turn right onto North Morninggale Way
+Turn right onto West Engelmann Drive
+Turn left onto North Maidstone Way
+Keep left onto North Maidstone Way
+Turn right onto West Pala Mesa Drive
+Arrive at West Pala Mesa Drive, on the right
+Head northwest on West Pala Mesa Drive
+Turn left onto Sedona Street
+Turn right onto North Eagle Road, ID 55
+Turn sharp right onto West Hobble Creek Drive
+Turn left onto North Brooklet Avenue
+Arrive at North Brooklet Avenue, on the right
+Head southwest on North Brooklet Avenue
+Turn right onto West Bristol Heights Drive
+Turn right onto North Cosworth Place
+Arrive at North Cosworth Place, on the right
+Head southwest on North Cosworth Place
+Turn left onto West Bristol Heights Drive
+Turn left onto North Tapestry Way
+Turn right onto Chadsworth Court
+Arrive at Chadsworth Court, on the right
+Head west on Chadsworth Court
+Turn right onto West Stockwell Drive
+Turn right onto North Talcrest Place
+Arrive at North Talcrest Place, on the right
+Head south on North Talcrest Place
+Turn right onto West Stockwell Drive
+Turn right onto North Bennington Way
+Turn left onto East Chinden Boulevard, US 20, US 26
+Turn left onto North Locust Grove Road
+Turn left onto East Strauss Drive
+Turn right onto North Beethoven Avenue
+Turn right onto East Comisky Street
+Arrive at East Comisky Street, straight ahead
+Head east on North Bach Place
+Turn left onto North Beethoven Avenue
+Arrive at North Beethoven Avenue, on the right
+Head north on North Beethoven Avenue
+Turn left onto East Strauss Drive
+Turn left onto North Locust Grove Road
+Turn left onto East Star Lane
+Turn left onto Patriot Circle
+Arrive at Patriot Circle, on the right
+Head southeast on Patriot Circle
+Turn right onto East Star Lane
+Turn left onto North Spangle Drive
+Turn sharp right onto East Paradise Lane
+Arrive at East Paradise Lane, on the right
+Head west on East Paradise Lane
+Turn left onto North Locust Grove Road
+Turn left onto East Leigh Field Drive
+Turn right onto North Neith Avenue
+Turn right onto East Lobelia Street
+Arrive at East Lobelia Street, on the left
+Head northeast on North Summerpark Place
+Turn left onto North Neith Avenue
+Turn right onto East Leigh Field Drive
+Turn left onto North Dixon Avenue
+Arrive at North Dixon Avenue, on the left
+Head southeast on East Garber Drive
+Turn right onto North Pankratz Way
+Turn right onto East Nakano Drive
+Turn left onto North Troxel Way
+Turn right onto East Bowman Street
+Arrive at East Bowman Street, on the right
+Head northeast on East Bowman Street
+Turn right onto North Troxel Way
+Turn sharp right onto East Van Oker Street
+Turn right onto East Summerdawn Drive
+Turn right onto North Summerpark Avenue
+Arrive at North Summerpark Avenue, on the right
+Head south on North Summerpark Avenue
+Turn left onto East Summerdawn Drive
+Turn left onto North Dixon Avenue
+Turn right onto North Troxel Way
+Turn left onto East Koetter Street
+Turn right onto North Pankratz Way
+Arrive at North Pankratz Way, on the right
+Head south on North Gaviola Avenue
+Turn left onto East Koetter Street
+Turn left onto North Troxel Way
+Turn left onto East Ustick Road
+Turn left onto North Eagle Road, ID 55
+Turn right onto West Meadowdale Drive
+Arrive at West Meadowdale Drive, on the left
+Head west on West Meadowdale Drive
+Turn right onto North Eagle Road, ID 55
+Turn right onto East McMillan Road
+Turn sharp left
+Turn sharp left
+Turn right
+Arrive at your destination, on the left

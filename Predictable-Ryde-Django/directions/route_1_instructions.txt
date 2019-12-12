@@ -1,0 +1,105 @@
+Head north
+Turn right
+Turn right
+Turn right
+Turn left
+Turn right onto East McMillan Road
+Turn left onto North Lancer Avenue
+Arrive at North Lancer Avenue, on the left
+Head north on North Lancer Avenue
+Turn left onto East McMillan Road
+Turn left onto North Eagle Road, ID 55
+Turn right onto East Wainwright Drive
+Turn slight right onto East Wainwright Drive
+Turn left onto North Dashwood Place
+Arrive at North Dashwood Place, on the left
+Head north on North Dashwood Place
+Turn right onto East Wainwright Drive
+Turn right onto North Eagle Road, ID 55
+Turn left onto East Ustick Road
+Turn left onto North Duane Way
+Turn left onto West Fernleaf Street
+Arrive at West Fernleaf Street, on the right
+Head west on West Fernleaf Street
+Arrive at West Fernleaf Street, on the right
+Head south on North Bottle Brush Avenue
+Turn right onto North Duane Way
+Turn right onto East Ustick Road
+Turn left onto North Locust Grove Road
+Turn right onto East Meadowgrass Street
+Arrive at East Meadowgrass Street, on the right
+Head east on East Meadowgrass Street
+Turn right onto North Locust Grove Road
+Turn right onto East Chateau Drive
+Turn right onto North Amethyst Place
+Turn left onto East Peridot Street
+Arrive at East Peridot Street, on the right
+Head east on East Peridot Street
+Turn right onto North Amethyst Place
+Turn left onto East Chateau Drive
+Turn right onto North Locust Grove Road
+Turn left onto East Oakcrest Drive
+Turn right onto North Simerly Avenue
+Arrive at North Simerly Avenue, on the left
+Head northwest on North Simerly Avenue
+Turn left onto East Meadow Wood Drive
+Turn left onto Dixie Lane
+Turn right onto East Fairview Avenue
+Turn right onto Jericho Road
+Arrive at Jericho Road, on the right
+Head north on Jericho Road
+Turn left onto Willowbrook
+Turn right onto North Viewhill Avenue
+Arrive at North Viewhill Avenue, on the right
+Head south on North Viewhill Avenue
+Turn sharp right onto Willowbrook
+Turn left onto East James Court Drive
+Turn left onto North Woodford Avenue
+Arrive at North Woodford Avenue, on the left
+Head north on North Woodford Avenue
+Turn left onto East James Court Drive
+Turn right onto North Meridian Road
+Turn right onto East Ustick Road
+Turn right onto Fauth Lane
+Arrive at Fauth Lane, on the left
+Head northeast on Fauth Lane
+Turn right onto East Ustick Road
+Turn right onto Wolverine Way
+Arrive at Wolverine Way, straight ahead
+Head east on East Stormy Drive
+Turn left onto East Ustick Road
+Turn right onto North Arrowwood Way
+Turn right onto East Washakie Street
+Turn left onto North Legacy Woods Avenue
+Turn right onto East Truth Street
+Turn left onto North Legacy Common Avenue
+Arrive at North Legacy Common Avenue, on the right
+Head south on North Legacy Common Avenue
+Turn left onto North Hollymount Way
+Turn left onto East Leigh Field Drive
+Turn left onto North Locust Grove Road
+Keep right onto North Locust Grove Road
+Turn right onto East Grand Canyon Drive
+Turn left onto North Journey Place
+Arrive at North Journey Place, on the right
+Head south on North Journey Place
+Turn left onto East Grand Canyon Drive
+Turn left onto East Trail Blazer Drive
+Turn left onto North Camas Creek Avenue
+Turn right onto East McMillan Road
+Turn left onto North Camas Creek Avenue
+Turn left onto West Redwick Drive
+Arrive at West Redwick Drive, straight ahead
+Head east on North Ice Springs Way
+Turn right onto North Camas Creek Avenue
+Turn left onto East McMillan Road
+Turn right onto North Syracuse Avenue
+Turn left onto West Bunkerhill Street
+Arrive at West Bunkerhill Street, on the left
+Head west on West Bunkerhill Court
+Turn right onto North Syracuse Avenue
+Turn right onto East McMillan Road
+Turn sharp left
+Turn sharp left
+Turn right
+Arrive at your destination, on the left
